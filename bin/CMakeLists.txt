@@ -29,9 +29,13 @@ target_link_libraries(generate_test_chart ${OpenCV_LIBS} ${CMAKE_THREAD_LIBS_INI
 # Qt5 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-find_package(Qt5Widgets)
-
-get_target_property(q5name Qt5::Widgets LOCATION)
+option(MTFMAPPER_BUILD_GUI "Build the Qt5 GUI (needs Qt5Widgets and Qt5Charts)" ON)
+if (MTFMAPPER_BUILD_GUI)
+  find_package(Qt5Widgets)
+  if (TARGET Qt5::Widgets)
+    get_target_property(q5name Qt5::Widgets LOCATION)
+  endif (TARGET Qt5::Widgets)
+endif (MTFMAPPER_BUILD_GUI)
 
 IF (EXISTS ${q5name})
   file(GLOB qt_SRCS ${PROJECT_SOURCE_DIR}/src/gui/*${cpp_ext} ${PROJECT_SOURCE_DIR}/src/gui/*.h)
