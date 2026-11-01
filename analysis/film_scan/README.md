@@ -38,4 +38,11 @@ the lens assignment rules (roll + frame-name regex) and the monitor list.
 ## Data
 
 `data/` has the per-frame and per-edge tables and the JSON summaries behind the report. `figures/` has the report's figures.
-The source scans are not included.
+The full rolls are not included. `samples/` has the original scans of the top 3 frames per lens (by frame MTF50),
+except frames with people in them:
+
+| lens | folder | frames (MTF50, lp/mm) |
+|---|---|---|
+| Helios-44M-4 58mm f/2 | `samples/helios-44m-4_58mm/` | 75420005 (29.2), 75450005 (25.6), 75440003 (24.2) |
+| Meyer-Optik Lydith 30mm f/3.5 | `samples/lydith_30mm/` | 03000005 (37.7), 03000007 (33.4); 03000008 (31.3) not included |
+| Pentacon 50mm f/1.8 auto | `samples/pentacon_50mm/` | 03000027 (38.2), 03000026 (37.7), 03000028 (31.1) |
