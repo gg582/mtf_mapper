@@ -1,7 +1,7 @@
 # Film scan resolution / aberration analysis
 
 Measures resolution (MTF) and aberrations of real film photos, with no test chart, by finding natural slanted edges
-in the scans. Results for three rolls (Helios-44M-4 58mm f/2, Meyer-Optik Lydith 30mm f/3.5, Pentacon 50mm f/1.8 auto)
+in the scans. Results for six rolls shot with three lenses (Helios-44M-4 58mm f/2 on four rolls, Meyer-Optik Lydith 30mm f/3.5, Pentacon 50mm f/1.8 auto)
 are in [REPORT.md](REPORT.md) (Korean).
 
 ## Pipeline
