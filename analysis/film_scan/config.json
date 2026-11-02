@@ -6,12 +6,14 @@
  "rolls": [
   {"id": "A_7540", "label": "7540", "color": "#2a78d6"},
   {"id": "B_gangwon", "label": "강원도여행", "color": "#eb6834"},
-  {"id": "C_busan_slide", "label": "부산 슬라이드", "color": "#1baf7a"}
+  {"id": "C_busan_slide", "label": "부산 슬라이드", "color": "#1baf7a"},
+  {"id": "D_4058", "label": "4058", "color": "#8a5cd0"}
  ],
  "exclude_frames": ["보정"],
  "selection": {"min_cnr": 20, "min_edges": 9, "max_ci_width": 0.30},
  "lenses": [
-  {"name": "Helios-44M-4 58mm f/2", "roll": "A_7540", "frame_regex": ".*"},
+  {"name": "Helios-44M-4 58mm f/2 (7540)", "roll": "A_7540", "frame_regex": ".*"},
+  {"name": "Helios-44M-4 58mm f/2 (4058)", "roll": "D_4058", "frame_regex": ".*"},
   {"name": "Meyer-Optik Lydith 30mm f/3.5", "roll": "B_gangwon", "frame_regex": "^0300000[1-9]$|^0300001[0-9]$"},
   {"name": "Pentacon 50mm f/1.8 auto", "roll": "B_gangwon", "frame_regex": "^030000(2[0-9]|3[0-9])$"}
  ],
